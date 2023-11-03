@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.form-box{
+    width: 720px;
+    height: 480px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #e1e1e1;
+    margin: 6% auto;
+    background: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    overflow: hidden;
+}
+.billingadd-txt{
+    font-family: sans-serif;
+    margin-top: 35px;
+    margin-left: 45px;
+}
+/* .payment-txt{
+    font-family: sans-serif;
+    margin: 0;
+    margin-left: 400px;
+} */
+/* /* .button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+} */
+.input-group1{
+    top: 60px;
+    margin-left: 0px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-group{
+    top: 60px;
+    margin-left: 360px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.input-fieldEXPYear{
+    width: 40%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.input-fieldCVV{
+    width: 40%;
+    padding: 10px 0;
+    margin: 5px 0;
+    margin-left: 35px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Poppins','sans-serif';
+    border-radius: 20px;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+img{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-left: 110px;
+    max-width: 25%;
+}
+a{
+    align-items: center;
+    /* position: relative; */
+    padding: 5px 20px;
+    display: inline-block;
+    margin-left: 105px;
+    margin-top: 120px;
+    text-decoration: none;
+    color: #fff;
+    background: #111;
+}
+h3{
+    font-family: Poppins;
+    text-align: center;
+    margin-top: 40px;
+}
+span{
+    position: relative;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-left: 25px;
+}

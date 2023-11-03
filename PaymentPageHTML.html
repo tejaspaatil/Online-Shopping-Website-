@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="PaymentPageCSS.css">
+    </head>
+    <body>
+        <div class="hero" id="blur">
+            <div class="form-box">
+                <div class="billingadd-txt">
+                    <h4>PAYMENT METHOD</h4>
+                </div>
+                <!-- <div class="payment-txt">
+                    <h4>PAYMENT</h4>
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div> -->
+                <form id="login" class="input-group1">
+                    <input type="text" class="input-field" placeholder="Full Name" required>
+                    <input type="text" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Address" required>
+                    <input type="text" class="input-field" placeholder="City" required>
+                    <input type="text" class="input-field" placeholder="State" required>
+                    <input type="number" pattern="[0-9](3)-[0-9](3)" class="input-field" placeholder="Zip-Code" required>
+                </form>
+                <form id="login" class="input-group">
+                    <input type="number" class="input-field" placeholder="Credit Card Number" required>
+                    <input type="number" class="input-field" placeholder="Exp Month" required>
+                    <input type="number" class="input-fieldEXPYear" placeholder="Exp Year" required>
+                    <input type="password" class="input-fieldCVV" placeholder="CVV" required>
+                    <button type="submit" onclick="toggle()" class="submit-btn">Pay</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <div id="popup">
+            <img src="check.png" alt="">
+            <h3>Product Purchased Successfully</h3>
+            <span>Your Product Delieverd in 3 days</span>
+            <a href="ThankYou.html" onclick="toggle()">Close</a>
+        </div>
+
+        <script>
+            // function successfull(){
+            //     alert("Product Purchase Successfully");
+            // }
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+ 
+    </body>
+</html>
